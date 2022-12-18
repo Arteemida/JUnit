@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +33,7 @@ public class HillelJavaBasicPage {
 
     public List<String> getCourseGoals() {
         List<String> goals = new ArrayList<>();
-        List<WebElement> listWithGoals =  (List<WebElement>) goalsList.findElements(By.tagName("li"));
+        List<WebElement> listWithGoals = (List<WebElement>) goalsList.findElements(By.tagName("li"));
         for (WebElement s : listWithGoals) {
             goals.add(s.getText());
         }

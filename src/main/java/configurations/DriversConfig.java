@@ -11,8 +11,12 @@ public class DriversConfig {
 
     public static WebDriver chooseBrowser(BrowsersList browsers) {
         switch (browsers) {
-            case CHROME -> createChrome();
-            case FIREFOX -> createFirefox();
+            case CHROME:
+                createChrome();
+                break;
+            case FIREFOX:
+                createFirefox();
+                break;
         }
         return driver;
     }

@@ -2,7 +2,7 @@ package cases;
 
 import configurations.BasicClass;
 import data.PersonalInfo;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.MainPage;
@@ -10,7 +10,7 @@ import pageObjects.MainPage;
 public class PracticeForm extends BasicClass {
     static MainPage mainPage = PageFactory.initElements(driver, MainPage.class);
 
-    @Before
+    @BeforeClass
     public void mainURL() {
         driver.get("https://demoqa.com/automation-practice-form");
     }
