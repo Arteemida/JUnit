@@ -11,7 +11,7 @@ public class PracticeForm extends BasicClass {
     static MainPage mainPage = PageFactory.initElements(driver, MainPage.class);
 
     @BeforeClass
-    public void mainURL() {
+    public static void mainURL() {
         driver.get("https://demoqa.com/automation-practice-form");
     }
 
