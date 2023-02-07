@@ -9,11 +9,16 @@ public class BasicClass {
 
     @BeforeClass
     public static void createDriver() {
-        driver = DriversConfig.chooseBrowser(BrowsersList.CHROME);
+        driver = DriversConfig.chooseBrowser(BrowsersList.CHROMEPROXY);
     }
 
     @AfterClass
     public static void closeDriver() {
-        DriversConfig.closeBrowser();
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.quit();
     }
 }
