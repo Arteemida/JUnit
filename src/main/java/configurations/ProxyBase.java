@@ -29,6 +29,6 @@ public class ProxyBase extends BasicClass {
 //        Har har = serverBase.getHar();
 //        har.writeTo(new File("Doc" +timeStamp +".har"));
         serverBase.stop();
-        Screenshot.takeScreen(driver, "Screenshot "+timeStamp);
+        Screenshot.takeScreen("Screenshot "+timeStamp);
     }
 }

@@ -9,7 +9,7 @@ public class BasicClass {
 
     @BeforeClass
     public static void createDriver() {
-        driver = DriversConfig.chooseBrowser(BrowsersList.CHROMEPROXY);
+        driver = DriversConfig.chooseBrowser(BrowsersList.CHROME);
     }
 
     @AfterClass
