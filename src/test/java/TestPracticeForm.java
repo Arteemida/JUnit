@@ -1,7 +1,6 @@
 import configurations.BasicClass;
 import data.PersonalInfo;
 import io.qameta.allure.Description;
-import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.BeforeClass;
 import org.junit.Rule;
@@ -25,4 +24,6 @@ public class TestPracticeForm extends BasicClass {
     public void formWithData() {
         mainPage.FillingFields(new PersonalInfo());
     }
+    @Test
+    System.out.println("Hello my dear. Good luck!")
 }
