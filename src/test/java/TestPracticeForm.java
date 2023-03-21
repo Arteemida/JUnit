@@ -23,7 +23,6 @@ public class TestPracticeForm extends BasicClass {
     @Description("Filling out the QA Practice form with user data")
     public void formWithData() {
         mainPage.FillingFields(new PersonalInfo());
+    System.out.println("Hello my dear. Good luck");
     }
-    @Test
-    System.out.println("Hello my dear. Good luck!")
 }
